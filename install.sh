@@ -6,7 +6,7 @@
 ########## Variables
 dir=~/dotfiles                    					# TODO automate
 olddir=~/dotfiles_old             					# TODO move to ./old, gitignore it
-files="bash_profile git-completion.bash gitconfig"  # TODO Make this dynamic
+files="ackrc bash_profile git-completion.bash gitconfig"  # TODO Make this dynamic
 
 # create dotfiles_old in homedir
 echo "Creating $olddir for backup of any existing dotfiles in ~"
