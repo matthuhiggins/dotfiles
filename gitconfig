@@ -1,3 +1,9 @@
 [user]
-	name = Matthew Higgins
-	email = developer@matthewhiggins.com
+  name = Matthew Higgins
+  email = developer@matthewhiggins.com
+[core]
+  excludesfile = ~/.gitignore_global
+[merge]
+  conflictstyle = diff3
+[push]
+  default = tracking
