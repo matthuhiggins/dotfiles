@@ -1,0 +1,26 @@
+alias ec2="knife search node -a ec2.public_hostname "
+alias ec2pri="knife search node -a hostname "
+alias ec2ssh="knife ssh -a ec2.public_hostname "
+
+function ec2ids {
+   TERM=xterm knife search node -a ec2.id "$1"
+}
+
+function ec2screen {
+    TERM=xterm knife ssh -a ec2.public_hostname "$1" screen
+}
+
+function ec2tmux {
+    TERM=xterm knife ssh -a ec2.public_hostname "$1" tmux
+}
+
+function prod {
+    TERM=xterm knife search node  -a ec2.public_hostname "role:production AND $1"
+}
+
+function ec2term {
+   for i in $*
+       do
+       knife node delete -y $i && knife client delete -y $i && ec2-terminate-instances $i;
+   done
+}
