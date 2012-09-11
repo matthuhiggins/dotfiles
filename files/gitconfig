@@ -8,6 +8,6 @@
 [push]
   default = current
 [pull]
-    default = tracking
+  default = tracking
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
