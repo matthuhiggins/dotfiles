@@ -17,9 +17,6 @@ set hidden
 nnoremap / /\v
 vnoremap / /\v
 
-
-
-
 " <leader> key
 let mapleader = ","
 
@@ -43,7 +40,6 @@ nnoremap <leader>a :Ack
 map <C-n> :cn<CR>
 map <C-p> :cp<CR>
 
-
 " ease of use keyboard mappings (why do I care about top/bottom of screen?)
 map H ^
 map L $
@@ -64,14 +60,11 @@ inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
-
 " easier quitting
 " save and close all
 nmap <leader>q :wqa!<CR>
 nmap <leader>w :w!<CR>
 nmap <leader><Esc> :q!<CR>
-
-
 
 " map semicolon to colon
 nnoremap ; :
