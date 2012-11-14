@@ -1,4 +1,5 @@
 --type-add=ruby=.haml
 --type-add=ruby=.sass
 --type-add=ruby=.scss
+--type-add=ruby=.tmpl
 --ignore-dir=dev_data
