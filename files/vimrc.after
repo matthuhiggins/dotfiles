@@ -44,16 +44,6 @@ map <C-p> :cp<CR>
 " remap space bar to search
 :nmap <Space> /
 
-" Disable the regular keys to get me on the right track
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-
 " Better default behaviour with left and right
 nnoremap j gj
 nnoremap k gk
