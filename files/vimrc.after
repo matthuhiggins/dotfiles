@@ -33,16 +33,14 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-" ,a to Ack
-nnoremap <leader>a :Ack 
+nnoremap <leader>a :Ack
+nnoremap <leader>n :NERDTree<CR>
 
 " Rotating among results in an ack search
 map <C-n> :cn<CR>
 map <C-p> :cp<CR>
 
 " ease of use keyboard mappings (why do I care about top/bottom of screen?)
-map H ^
-map L $
 " remap space bar to search
 :nmap <Space> /
 
@@ -76,6 +74,7 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+noremap <Tab> <C-w>w
 
 " Plugin options
 

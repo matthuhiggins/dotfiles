@@ -1,11 +1,11 @@
 " big fonts are good for RSI
-set guifont=Monaco:h18
+set guifont=Monaco:h12
 
 " go full screen on open
-if has("gui_macvim")
-  set fuoptions=maxvert,maxhorz
-  au GUIEnter * set fullscreen
-endif
+" if has("gui_macvim")
+"   set fuoptions=maxvert,maxhorz
+"   au GUIEnter * set fullscreen
+" endif
 
 set guioptions-=T " no toolbar set guioptions-=m " no menus
 set guioptions-=r " no scrollbar on the right
