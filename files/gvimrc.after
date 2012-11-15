@@ -1,5 +1,4 @@
-" big fonts are good for RSI
-set guifont=Monaco:h12
+set gfn=Source_Code_Pro:h12
 
 " go full screen on open
 " if has("gui_macvim")
