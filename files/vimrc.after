@@ -34,7 +34,7 @@ set nowritebackup
 set noswapfile
 
 nnoremap <leader>a :Ack
-nnoremap <leader>n :NERDTree<CR>
+nnoremap <Bslash>r :NERDTreeFind<CR>
 
 " Rotating among results in an ack search
 map <C-n> :cn<CR>

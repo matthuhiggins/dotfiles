@@ -5,5 +5,8 @@ export PATH=/usr/local/bin:$PATH
 source ~/.git-completion.bash
 source ~/.rvm/scripts/rvm
 source ~/.chef/aliases
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+alias rtest='ruby -Itest'
