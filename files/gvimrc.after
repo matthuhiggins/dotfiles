@@ -1,4 +1,4 @@
-colorscheme zenburn
+colorscheme railscasts2
 set gfn=Source_Code_Pro:h12
 
 " go full screen on open
