@@ -3,17 +3,15 @@ let NERDTreeWinSize=16
 
 autocmd VimEnter * wincmd l
 
-" have long lines wrap by defaults
+set gdefault
+set hidden
+set nobackup
+set noswapfile
+set nowritebackup
+set relativenumber
 set wrap
 
-" change line numberings for ease with writing commands
-set relativenumber
-
-"commands :bnext, :bprevious and :buffer won't abandon the buffer until any changes have been written
-set hidden
-
-" fix regexes default regex handling by auto-inserting \v before every REGEX.
-" Now regexs are Ruby compatible
+" make regular expressions ruby compatibile
 nnoremap / /\v
 vnoremap / /\v
 
@@ -27,17 +25,14 @@ noremap <tab> <C-w><C-w>
 " :bd deletes the current buffer (all windows of)
 nmap <leader>d :bd<CR>
 
-" get rid of annoying backup behaviour
-set nobackup
-set nowritebackup
-set noswapfile
-
 nnoremap <leader>a :Ack
 nnoremap <Bslash>r :NERDTreeFind<CR>
 
-" Rotating among results in an ack search
+" Rotate among results in an ack search
 map <C-n> :cn<CR>
 map <C-p> :cp<CR>
+
+" Newlines without insert mode
 map <S-Enter> O<Esc>j
 map <CR> o<Esc>
 
@@ -71,4 +66,3 @@ let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': 
 let g:AutoCloseProtectedRegions = ["Character"] 
 
 " don't need /g after :s or :g
-set gdefault
