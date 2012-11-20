@@ -3,3 +3,4 @@
 --type-add=ruby=.scss
 --type-add=ruby=.tmpl
 --ignore-dir=dev_data
+--ignore-dir=coverage
