@@ -1,12 +1,6 @@
 colorscheme railscasts2
 set gfn=Source_Code_Pro:h12
 
-" go full screen on open
-" if has("gui_macvim")
-"   set fuoptions=maxvert,maxhorz
-"   au GUIEnter * set fullscreen
-" endif
-
 set guioptions-=T " no toolbar set guioptions-=m " no menus
 set guioptions-=r " no scrollbar on the right
 set guioptions-=R " no scrollbar on the right

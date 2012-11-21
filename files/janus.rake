@@ -1,7 +1,0 @@
-vim_plugin_task "abolish",          "https://github.com/tpope/vim-abolish.git"
-vim_plugin_task "autoclose",        "https://github.com/Townk/vim-autoclose.git"
-vim_plugin_task "bundler"           "https://github.com/tpope/vim-bundler.git"
-vim_plugin_task "codeschool"        "https://github.com/29decibel/codeschool-vim-theme.git"
-vim_plugin_task "ragtag",           "https://github.com/tpope/vim-ragtag.git"
-vim_plugin_task "rails",            "https://github.com/tpope/vim-rails.git"
-vim_plugin_task "vim-css-color",    "https://github.com/skammer/vim-css-color.git"
