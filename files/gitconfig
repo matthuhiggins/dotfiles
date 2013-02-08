@@ -3,6 +3,10 @@
   email = developer@matthewhiggins.com
 [core]
   excludesfile = ~/.gitignore_global
+[alias]
+  st = status -s -b
+[color]
+  ui = true
 [merge]
   conflictstyle = diff3
 [push]

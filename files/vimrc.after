@@ -59,4 +59,4 @@ noremap <S-Tab> <C-w>W
 "git clone https://github.com/Townk/vim-autoclose.git   autoclose
 "git clone https://github.com/tpope/vim-bundler.git     bundler
 "git clone https://github.com/tpope/vim-ragtag.git      ragtag
-"git clone https://github.com/tpope/vim-endwise.github  endwise
+"git clone https://github.com/tpope/vim-endwise.git     endwise
