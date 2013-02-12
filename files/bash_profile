@@ -8,7 +8,8 @@ source ~/.chef/aliases
 
 source ~/.rvm/scripts/rvm
 alias rtest='ruby -Itest'
-alias ztest='zeus test'
+alias zest='zeus test'
+alias zake='zeus rake'
 
 export RUBY_HEAP_MIN_SLOTS=1000000
 export RUBY_HEAP_SLOTS_INCREMENT=1000000
