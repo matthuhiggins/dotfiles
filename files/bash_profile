@@ -6,7 +6,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 source ~/.git-completion.bash
 source ~/.chef/aliases
 
-source ~/.rvm/scripts/rvm
+eval "$(rbenv init -)"
 alias rtest='ruby -Itest'
 alias zest='zeus test'
 alias zake='zeus rake'
