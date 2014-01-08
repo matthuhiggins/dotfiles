@@ -2,5 +2,6 @@
 --type-add=ruby=.sass
 --type-add=ruby=.scss
 --type-add=ruby=.tmpl
+--type-add=ruby=.coffee
 --ignore-dir=dev_data
 --ignore-dir=coverage
