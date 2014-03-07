@@ -14,3 +14,14 @@ function ec2console {
   IP=$(knife search "chef_environment:$1 AND role:place_directory_$2" |grep IP|head -1|awk '{print $2}')
   ssh -t $IP "source /etc/profile; axle console"
 }
+
+function ec2dump {
+  IP=$(knife search "chef_environment:$1 AND role:place_directory_$2" |grep IP|head -1|awk '{print $2}')
+  ssh -t $IP "source /etc/profile; axle console"
+  
+  # ssh [ip]
+  # sudo mysqldump --host=place-directory-production.cgvlc4fhupvi.us-east-1.rds.amazonaws.com --user=place_directory --password=eemaizaemo9cahR  --ignore-table=place_directory_production.subscription_notifications --ignore-table=place_directory_production.delayed_jobs place_directory_production | gzip > /tmp/dump.sql.gz
+  # 
+  # scp [ip]:/tmp/dump.sql.gz dev_data/
+  # gunzip < dev_data/dump.sql.gz | mysql -u root place_directory_development
+}

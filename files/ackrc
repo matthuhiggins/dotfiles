@@ -3,5 +3,7 @@
 --type-add=ruby=.scss
 --type-add=ruby=.tmpl
 --type-add=ruby=.coffee
+--type-add=ruby=.spoke
+--type-add=ruby=.json
 --ignore-dir=dev_data
 --ignore-dir=coverage
