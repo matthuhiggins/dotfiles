@@ -1,4 +1,4 @@
-export EDITOR='mate -w'
+export EDITOR='atom -nw'
 export PS1='\w$(__git_ps1 " (%s)"):'
 export PATH=/usr/local/bin:$PATH
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -9,8 +9,6 @@ source ~/.zd.sh
 
 eval "$(rbenv init -)"
 alias rtest='ruby -Itest'
-alias zest='zeus test'
-alias zake='zeus rake'
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
