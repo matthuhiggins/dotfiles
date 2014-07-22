@@ -11,6 +11,7 @@ source ~/.zd.sh
 
 eval "$(rbenv init -)"
 alias rtest='ruby -Itest'
+alias brake='bundle exec rake'
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
