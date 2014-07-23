@@ -15,12 +15,3 @@ alias rtest='ruby -Itest'
 alias brake='bundle exec rake'
 
 export JAVA_HOME=$(/usr/libexec/java_home)
-
-# export EC2_PRIVATE_KEY=~/.aws/accounts/gotime/key.pem
-# function emrpk {
-#     scp -o StrictHostKeyChecking=no $(dirname ${EC2_PRIVATE_KEY})/emr_shared.pem hadoop@${1}:pk.pem
-# }
-#
-# function emrssh {
-#     ssh -L 9100:localhost:9100 -L 11000:localhost:11000 -o ServerAliveInterval=10 -o StrictHostKeyChecking=no -i ${EC2_PRIVATE_KEY} hadoop@${1}
-# }
