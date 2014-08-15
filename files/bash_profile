@@ -7,7 +7,8 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="./bin:$PATH"
 
 source ~/.git-completion.bash
-source ~/.chef/aliases
+source ~/.functions/chef
+source ~/.functions/gems
 source ~/.zd.sh
 
 eval "$(rbenv init -)"
