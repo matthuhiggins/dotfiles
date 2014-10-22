@@ -2,3 +2,8 @@ geminabox() {
   GEM_BUILD=$(gem build `ls *.gemspec` | grep File | awk '{print $2}')
   gem inabox $GEM_BUILD
 }
+
+gemfury() {
+  GEM_BUILD=$(gem build `ls *.gemspec` | grep File | awk '{print $2}')
+  fury push $GEM_BUILD --as dataaxle
+}
