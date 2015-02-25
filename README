@@ -1,1 +1,3 @@
 > ./install.sh
+
+brew install git rbenv ruby-build mysql postgres memcached redis
