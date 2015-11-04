@@ -1,27 +1,43 @@
-chef_username = "matthuhiggins"
-current_dir   = File.dirname(__FILE__)
-user_email    = `git config --get user.email`
+# Data Axle knife.rb
+#
+# To use: Copy this file to .chef/knife.rb and edit or just symlink to this file
+# if no changes are necessary
+# Use of direnv is recommended to set ENV vars.
+#
+# Additional information at http://docs.chef.io/config_rb_knife_optional_settings.html
 
-home_dir      = ENV['HOME']
-org           = ENV['chef_org'] || 'my_org'
+# your chef user name
+chefUser = ENV['CHEF_USER'] || ENV['USER']
 
-knife_override = "#{home_dir}/.chef/knife_override.rb"
+# chef server to connect to
+chefUrl = ENV['CHEF_SERVER_URL'] || 'https://chef.data-axle.com'
 
-log_level :info
-log_location STDOUT
+# chef organization name
+chefOrg = ENV['CHEF_ORG'] || 'data-axle'
 
-node_name chef_username
-client_key "#{home_dir}/.chef/#{chef_username}.pem"
+# chef repo path
+chef_repo_dir = ENV['CHEF_REPO'] || '~/chef-repo/cookbooks'
 
-cookbook_email "#{user_email}"
+# organization required for chef 12
+chefUrl = "#{chefUrl}/organizations/#{chefOrg}" if chefOrg.length > 0
 
-cookbook_path     [ "~/chef-repo/cookbooks", "~/chef-repo/site_cookbooks" ]
-role_path         "#{current_dir}/../roles"
-environment_path  "#{current_dir}/../environments"
+# determine .chef dir
+dot_chef_dir = File.expand_path File.dirname(__FILE__)
 
-validation_client_name   'infogroup-validator'
-validation_key           "#{current_dir}/infogroup-validator.pem"
-chef_server_url          'https://chef.prd.data-axle.infogroup.com'
+ssl_verify_mode          :verify_peer
+log_level                :info
+log_location             STDOUT
 
-knife[:aws_access_key_id]     = ENV['AWS_ACCESS_KEY_ID']
+node_name                chefUser
+client_key               File.join(dot_chef_dir, chefOrg, "#{chefUser}.pem")
+chef_server_url          chefUrl
+syntax_check_cache_path  File.join(dot_chef_dir, chefOrg, "syntax_check_cache")
+cookbook_path            [ File.join(chef_repo_dir, 'cookbooks') ]
+
+# aws credentials
+knife[:aws_access_key_id] = ENV['AWS_ACCESS_KEY_ID']
 knife[:aws_secret_access_key] = ENV['AWS_SECRET_ACCESS_KEY']
+knife[:aws_ssh_key_id] = ENV['USER']
+
+# local backup path
+knife[:chef_server_backup_dir] = File.join(dot_chef_dir, chefOrg, 'backup')
