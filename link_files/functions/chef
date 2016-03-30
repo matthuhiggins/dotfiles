@@ -23,7 +23,7 @@ function ec2screen {
 #
 # ec2deploy pipeline_web production
 function ec2deploy {
-  ec2ssh $1 $2 "axle deploy"
+  ec2ssh $1 $2 "content_s deploy"
   # knife ssh "role:$1 AND chef_environment:$2" "axle deploy"
 }
 
@@ -39,12 +39,12 @@ function ec2login {
 # ec2console pipeline_web production
 function ec2console {
   IP=$(knife search "role:$1 AND chef_environment:$2" | grep IP | head -1 | awk '{print $2}')
-  ssh -t $IP "source /etc/profile; axle console"
+  ssh -t $IP "source /etc/profile; pipeline console"
 }
 
 function ec2dump {
   IP=$(knife search "role:$1 AND chef_environment:$2" | grep IP|head -1|awk '{print $2}')
-  ssh -t $IP "source /etc/profile; axle console"
+  ssh -t $IP "source /etc/profile; pipeline console"
 
   # ssh [ip]
   # sudo mysqldump --host=place-directory-production.cgvlc4fhupvi.us-east-1.rds.amazonaws.com --user=content_system_ --password=eemaizaemo9cahR  --ignore-table=content_system_.subscription_notifications --ignore-table=content_system_.delayed_jobs content_system_ | gzip > /tmp/dump.sql.gz

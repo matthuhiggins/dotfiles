@@ -10,7 +10,7 @@ export PATH="./bin:$PATH"
 source ~/.git-completion.bash
 source ~/.functions/chef
 source ~/.functions/gems
-source ~/.zd.sh
+source $(brew --prefix)/etc/bash_completion
 
 eval "$(rbenv init -)"
 alias rtest='ruby -Itest'
