@@ -1,0 +1,1 @@
+0 0,12 * * *  find ~/Downloads/ -mindepth 1 -mtime +10 -delete

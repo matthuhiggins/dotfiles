@@ -16,3 +16,4 @@ run() {
 source brew.sh
 run link_files ln -f -s
 run copy_files cp
+crontab cron
