@@ -13,6 +13,7 @@ source ~/.functions/gems
 source $(brew --prefix)/etc/bash_completion
 
 eval "$(rbenv init -)"
+eval "$(jenv init -)"
 alias rtest='ruby -Itest'
 alias brake='bundle exec rake'
 
