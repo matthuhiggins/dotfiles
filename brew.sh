@@ -3,10 +3,11 @@ brew install \
   coreutils \
   git \
   heroku \
-  rbenv \
-  ruby-build \
-  mysql \
-  postgres \
+  jenv \
   memcached \
+  mysql \
+  node \
+  postgres \
+  rbenv \
   redis \
-  jenv
+  ruby-build
