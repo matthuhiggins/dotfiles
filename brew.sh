@@ -16,3 +16,7 @@ brew install \
   rbenv \
   redis \
   ruby-build
+
+brew services start memcached
+brew services start redis
+brew services start postgresql
