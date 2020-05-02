@@ -1,3 +1,4 @@
+brew tap heroku/brew
 brew install \
   bash-completion \
   coreutils \
