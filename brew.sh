@@ -13,6 +13,7 @@ brew install \
   mysql \
   node \
   postgres \
+  puma/puma/puma-dev \
   rbenv \
   redis \
   ruby-build
