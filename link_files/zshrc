@@ -8,6 +8,7 @@ eval "$(rbenv init -)"
 eval "$(jenv init -)"
 alias rtest='ruby -Itest'
 alias brake='bundle exec rake'
+alias smash='git reset $(git merge-base master $(git rev-parse --abbrev-ref HEAD))'
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 

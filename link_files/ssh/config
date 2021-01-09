@@ -1,12 +1,12 @@
 User matthuhiggins
 
-Host bastion bastion.data-axle.com
-  Hostname bastion.data-axle.com
+Host bastion bastion.data-axle.com bastion.management.data-axle.com
+  Hostname bastion.management.data-axle.com
   Port 422
   ForwardAgent yes
   ServerAliveInterval 150
   StrictHostKeyChecking accept-new
-  CheckHostIP no
+  CheckHostIP yes
   LogLevel ERROR
   UseKeyChain yes
   AddKeysToAgent yes
