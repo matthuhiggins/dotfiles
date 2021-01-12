@@ -13,6 +13,7 @@
   default = current
 [pull]
   default = tracking
+  rebase = true
 [credential]
   helper = osxkeychain
 [filter "media"]
