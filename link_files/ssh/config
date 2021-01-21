@@ -1,15 +1,5 @@
 User matthuhiggins
 
-Host bastion bastion.data-axle.com bastion.management.data-axle.com
-  Hostname bastion.management.data-axle.com
-  Port 422
-  ForwardAgent yes
-  ServerAliveInterval 150
-  StrictHostKeyChecking accept-new
-  CheckHostIP yes
-  LogLevel ERROR
-  UseKeyChain yes
+Host *
   AddKeysToAgent yes
-
-Host *.qa *.sandbox *.production *.management *.development
-  ProxyCommand ssh 2>/dev/null bastion netcat -w 180 %h %p
+  UseKeychain yes
