@@ -3,14 +3,13 @@ export EDITOR="/usr/local/bin/mate -w"
 export PATH=/usr/local/bin:$PATH
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="./bin:$PATH"
+export PATH="$HOME/.jenv/bin:$PATH"
 
 eval "$(rbenv init -)"
 eval "$(jenv init -)"
 alias rtest='ruby -Itest'
 alias brake='bundle exec rake'
 alias smash='git reset $(git merge-base master $(git rev-parse --abbrev-ref HEAD))'
-
-export JAVA_HOME=$(/usr/libexec/java_home)
 
 export ZSH=$HOME/.oh-my-zsh
 ZSH_DISABLE_COMPFIX=true
