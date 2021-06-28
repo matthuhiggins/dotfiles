@@ -1,11 +1,11 @@
-brew tap heroku/brew \
-         homebrew/cask-versions \
-         elastic/tap
+brew tap heroku/brew
+brew tap homebrew/cask-versions
+brew tap elastic/tap
 
 brew install \
   bash-completion \
   coreutils \
-  elastic/tap/elasticsearch-full
+  elastic/tap/elasticsearch-full \
   git \
   heroku \
   jenv \
@@ -16,7 +16,10 @@ brew install \
   puma/puma/puma-dev \
   rbenv \
   redis \
-  ruby-build
+  ruby-build \
+	zsh
+
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 brew services start memcached
 brew services start redis
