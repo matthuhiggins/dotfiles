@@ -16,7 +16,7 @@ brew install \
   postgres \
   puma/puma/puma-dev \
   redis \
-  ruby-build \
+  ruby-install \
 	zsh
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
