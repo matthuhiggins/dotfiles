@@ -4,6 +4,7 @@ brew tap elastic/tap
 
 brew install \
   bash-completion \
+  chruby
   coreutils \
   elastic/tap/elasticsearch-full \
   git \
@@ -14,7 +15,6 @@ brew install \
   node \
   postgres \
   puma/puma/puma-dev \
-  rbenv \
   redis \
   ruby-build \
 	zsh
