@@ -1,8 +1,10 @@
 [user]
   name = Matthew Higgins
-  email = developer@matthewhiggins.com
+  email = matt.higgins@shopify.com
+  signingkey = D50FA92F955DC018EEC8E20A3D28FFA185D45350
 [core]
   excludesfile = ~/.gitignore_global
+  commitGraph = true
 [alias]
   st = status -s -b
 [color]
@@ -14,9 +16,25 @@
 [pull]
   default = tracking
   rebase = true
-[credential]
-  helper = osxkeychain
 [filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
+[diff]
+  algorithm = patience
+[gc]
+  writeCommitGraph = true
+[protocol]
+  version = 2
+[credential]
+  helper =
+  helper = store --file /opt/dev/var/private/git_credential_store
+[url "https://github.com/Shopify/"]
+  insteadOf = git@github.com:Shopify/
+  insteadOf = git@github.com:shopify/
+  insteadOf = ssh://git@github.com/Shopify/
+  insteadOf = ssh://git@github.com/shopify/
+[gpg]
+  program = /nix/var/nix/gcroots/dev-profiles/dev-support-dev-profile/bin/gpg-auto-pin
+[commit]
+  gpgSign = true
