@@ -1,1 +1,2 @@
-excludeDirectories = "{$excludeDirectories,tmp,node_modules}"
+excludeInFileChooser = "{$excludeInFileChooser,log,node_modules,tmp}"
+excludeInFolderSearch = "{$excludeInFolderSearch,log,node_modules,tmp}"
