@@ -9,7 +9,6 @@ alias smash='git reset $(git merge-base main $(git rev-parse --abbrev-ref HEAD))
 export ZSH=$HOME/.oh-my-zsh
 ZSH_DISABLE_COMPFIX=true
 ZSH_THEME="robbyrussell"
-plugins=(git textmate)
 source $ZSH/oh-my-zsh.sh
 
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
