@@ -1,6 +1,5 @@
 brew tap heroku/brew
 brew tap homebrew/cask-versions
-brew tap elastic/tap
 
 brew install \
   bash-completion \
