@@ -1,6 +1,6 @@
 [user]
   name = Matthew Higgins
-  email = matt.higgins@shopify.com
+  email = matthew.higgins@moderntreasury.com
 [core]
   excludesfile = ~/.gitignore_global
 [alias]
@@ -18,7 +18,3 @@
   required = true
   clean = git media clean %f
   smudge = git media smudge %f
-[include]
-	path = /Users/matthuhiggins/.config/dev/gitconfig
-[credential]
-	helper = store --file /opt/dev/var/private/git_credential_store
